@@ -1,0 +1,109 @@
+/* Reset default form styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgba(255, 255, 255, .6) ;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+button {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="date"] {
+    /* Customize date input appearance (may vary across browsers) */
+    appearance: none;
+    background-color: #fff;
+    color: #333;
+}
+
+input[type="submit"],
+button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+.reset {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.reset:hover {
+    background-color: #ccc;
+}
+
+.bg{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(2px);
+   
+}
+
+/* Optional: Add responsive styles for small screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+}
+
+/* Default styles */
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Hover state */
+input:hover {
+    border-color: #007bff; 
+}
+
+/* Focus state */
+input:focus {
+    border-color: #00cc9a;
+    box-shadow: 0 0 5px rgba(0, 204, 154, 0.5); 
+    outline: none; 
+}
